@@ -18,7 +18,7 @@ TransDecoder.LongOrfs -t uni-contig.cd-hit.fa
 
 ### Annotation CDS Protien
 
-emapper.py  --cpu 20 -i longest_orf.pep --itype proteins --output test
+/pub4/wtest/software/eggnog-mapper-2.1.5/emapper.py  --cpu 20 -i longest_orf.pep --itype proteins --output test
 
 ### calculate expression （--prep_reference 如果已经建库成功，便不需要了）
 
