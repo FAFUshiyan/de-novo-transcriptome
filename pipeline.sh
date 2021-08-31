@@ -7,7 +7,8 @@ Trinity --seqType fq --max_memory 50G --left reads_1.fq  --right reads_2.fq  --m
 get_longest_isoform_seq_per_trinity_gene.pl Trinity.fasta > longest_isoform.fasta
 cd-hit -i longest_isoform.fasta -o uni-contig.cd-hit.fa -c 0.9  -M 10000 -T 30 -aS 0.9
 
-### Assembly Quality Assessment
+### Assembly Quality Assessment 
+conda activate BUSCO
 
 busco -i unigene.cd-hit.fa -o BUSCO -m transcriptome -l insecta_odb10
 
